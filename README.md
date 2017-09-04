@@ -33,7 +33,7 @@ This project get the raw data collected from the accelerometers from the Samsung
   
 	e.Appropriately labels the data set with descriptive variable names.
   
-	f.Creates a second, independent tidy data set with the average of each variable for each activity and each subject at default working directory. The tidy data set is named as ¡°tidy_subject_activity_variable_mean.csv¡±.
+	f.Creates a second, independent tidy data set with the average of each variable for each activity and each subject at default working directory. The tidy data set is named as "tidy_subject_activity_variable_mean.txt".
 
   
 summarize: 
