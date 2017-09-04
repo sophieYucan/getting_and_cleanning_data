@@ -1,7 +1,7 @@
 
 ######### getting and cleaning data########################################
-#  time£º20170903
-#  author£ºsophieyucan
+#  time:20170903
+#  author:sophieyucan
 #  note: < getting and cleaning data> week 4 Course Project
 ##########################################################################¡ª#
 
