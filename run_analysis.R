@@ -12,7 +12,7 @@ library(reshape2)
 rm(list = ls())
 getwd()
 #set work directory
-# setwd(".\\data science\\getting and cleanning data\\data")
+# setwd("C:\\Users\\yucan\\Documents\\R test\\data science\\getting and cleanning data\\data")
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
                destfile = "c3_project_dataset.zip",mode = "wb")
 unzip("c3_project_dataset.zip")
@@ -69,8 +69,8 @@ melt_df <- melt(result_df,
                 measure.vars = c(-(1:2)))
 tidy_data <- dcast(melt_df, subject + activitylabel ~ variable, mean)
 
-write.csv(tidy_data,"tidy_subject_activity_variable_mean.csv",row.names = FALSE)
+write.table(tidy_data,"tidy_subject_activity_variable_mean.txt",row.names = FALSE)
 rm(result_df,melt_df,tidy_data)
 
-#test
-# tidy_df <- read.csv("tidy_subject_activity_variable_mean.csv")
+# test
+# tidy_df <- read.table("tidy_subject_activity_variable_mean.txt",header = TRUE)
